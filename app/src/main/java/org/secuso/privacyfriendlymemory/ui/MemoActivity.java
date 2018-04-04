@@ -143,6 +143,7 @@ public class MemoActivity extends MemoAppCompatDrawerActivity {
                 updateStatsView();
 
                 if (memory.isFinished()) {
+                    gridview.setContentDescription("FINISHED");
                     saveHighscore();
                     showWinDialog();
                     gridview.setEnabled(false);

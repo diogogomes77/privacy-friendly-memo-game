@@ -143,7 +143,7 @@ public class MainActivity extends AppCompatDrawerActivity {
     }
 
     private void setAppStarted() {
-        preferences.edit().putBoolean(Constants.FIRST_APP_START, false).commit();
+        preferences.edit().putBoolean(Constants.FIRST_APP_START, true).commit();
     }
 
     private void showWelcomeDialog() {
