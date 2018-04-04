@@ -19,9 +19,9 @@ import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidKeyCode;
 
-public class FirstTest {
+public class CustomTest {
 
-    private static final String TAG = "FirstTest";
+    private static final String TAG = "CustomTest";
 
     private MobileDriver mWebDriver;
 
@@ -60,7 +60,7 @@ public class FirstTest {
     }
 
     @Test
-    public void testFirstCalculator() {
+    public void playSimpleGame() {
         TestUtils.implicitWait(mWebDriver, TimeoutWait.MEDIUM);
         mWebDriver.findElement(By.id("button1")).click();
         TestUtils.implicitWait(mWebDriver, TimeoutWait.LONG);
